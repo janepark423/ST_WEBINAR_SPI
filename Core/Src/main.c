@@ -120,6 +120,8 @@ int main(void)
   Error_Handler();
   if (bufcmp(txbuf, rxbuf, RXBUF_SIZE))
   Error_Handler();
+  //  Error_Handler(); 이곳에 breakpoint가 걸려있지 않으면 데이터 쓰기/읽기 정상으로 간주
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
